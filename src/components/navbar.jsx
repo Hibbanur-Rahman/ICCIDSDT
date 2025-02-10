@@ -90,7 +90,7 @@ export function Navbar() {
           </NavigationMenu>
 
           <Button className="bg-blue-800 hover:bg-violet-800 text-white">
-            BUY TICKET NOW
+            Register Now
           </Button>
         </div>
       </div>
@@ -182,7 +182,7 @@ export function Navbar() {
 
               {/* CTA Button */}
               <Button className="bg-blue-800 hover:bg-violet-800 text-white">
-                Register NOW
+                Register Now
               </Button>
             </div>
           </div>
