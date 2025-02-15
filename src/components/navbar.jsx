@@ -33,7 +33,7 @@ export function Navbar() {
         className={`fixed top-0 left-0 right-0 w-full bg-white shadow-lg transform transition-all duration-300 z-50 ${
           isScrolled
             ? "translate-y-0 opacity-100"
-            : "-translate-y-full opacity-0"
+            : "-translate-y-full opacity-100"
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-4">
@@ -97,7 +97,7 @@ export function Navbar() {
 
       {/* Original navbar */}
       <div className="w-full flex justify-center items-center bg-transparent">
-        <div className="w-10/12 max-w-7xl border border-gray-200 shadow-xl rounded-2xl relative top-[20px] py-4 bg-white">
+        <div className="w-10/12 max-w-7xl border border-gray-200 shadow-xl rounded-2xl relative top-[20px] z-[2] py-4 bg-white">
           {/* Top bar */}
           <div className="w-full bg-white py-2 px-4 border-b rounded-t-2xl">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
