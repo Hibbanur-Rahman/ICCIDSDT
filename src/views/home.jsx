@@ -96,17 +96,110 @@ const Home = () => {
         },
       ],
     },
+    advisoryBoard: {
+      international: [
+        "Prof. Akhtar Kalam, Victoria University, Melbourne, Australia",
+        "Prof. Ayoub Al-Hamadi, University of Magdeburg, Germany",
+        "Prof. Dato' Hasagaya Bin Abdullah, National Defence University of Malaysia",
+        "Prof. Hammad Hasan, King Abdul Aziz University, Saudi Arabia",
+        "Prof. Hanifa Shah, Birmingham City University, United Kingdom",
+        "Prof. Hari Mohan Pandey, Edge Hill University, United Kingdom",
+        "Prof. Minoru Kuribayashi, Okayama University, Japan",
+        "Prof. Riyasat Ali, University of Houston, USA",
+        "Prof. Syed Khalid Mustafa, University of Tabuk, Saudi Arabia"
+      ],
+      national: [
+        "Prof. Abdul Quaiyum Ansari, Jamia Millia Islamia, New Delhi",
+        "Prof. Daya Krishan Lobiyal, Jawaharlal Nehru University, New Delhi",
+        "Dr. Kavita Bhatia, Ministry of Electronics and IT, Delhi",
+        "Prof. Khurram Mustafa, Jamia Millia Islamia, New Delhi",
+        "Prof. Kumar Molugaram, Osmania University, Hyderabad",
+        "Prof. R.S. Nirjar, Former Chairman, AICTE, Delhi",
+        "Prof. Raees Ahmad Khan, Babasaheb Bhimrao Ambedkar University",
+        "Prof. Rajive Kumar, Member Secretary, AICTE, Delhi",
+        "Dr. Santosh Pandey, Ministry of Electronics and IT",
+        "Dr. Vivek Kumar Singh, NITI Ayog",
+        "Prof. Yogesh Singh, Vice Chancellor, Delhi University"
+      ]
+    },
+    technicalCommittee: {
+      members: [
+        {
+          name: "Prof. Mohammad Amjad",
+          institution: "Jamia Millia Islamia, New Delhi"
+        },
+        {
+          name: "Prof. Tanvir Ahmad",
+          institution: "Jamia Millia Islamia, New Delhi"
+        },
+        {
+          name: "Prof. Bashir Alam",
+          institution: "Jamia Millia Islamia, New Delhi"
+        },
+        {
+          name: "Prof. Mansaf Alam",
+          institution: "Jamia Millia Islamia, New Delhi"
+        },
+        {
+          name: "Prof. Mohammad Zeeshan Ansari",
+          institution: "Jamia Millia Islamia, New Delhi"
+        },
+        {
+          name: "Prof. Mohd. Najmud Din",
+          institution: "University of Kashmir, Srinagar"
+        },
+        {
+          name: "Prof. Majid Zaman",
+          institution: "University of Kashmir, Srinagar"
+        },
+        {
+          name: "Prof. Zahoor Ahmad Najar",
+          institution: "University of Kashmir, Srinagar"
+        },
+        {
+          name: "Prof. Muheet Ahmed Butt",
+          institution: "University of Kashmir, Srinagar"
+        }
+      ]
+    },
+    organizingCommittee: {
+      members: [
+        "Prof. Syed Imtiyaz Hassan, Department of CS & IT, MANUU",
+        "Ms. Tunga Arundhathi, Department of CS & IT, MANUU",
+        "Ms. Khaleda Afroaz, Department of CS & IT, MANUU",
+        "Dr. Kahkashan Tabsssum, Department of CS & IT, MANUU",
+        "Dr. A. Satya Sai Kumar, Department of CS & IT, MANUU",
+        "Dr. Khaleel Ahmad, Department of CS & IT, MANUU",
+        "Ms. Afrah Fathima, Department of CS & IT, MANUU",
+        "Mr. Ahmad Talha Siddiqui, Department of CS & IT, MANUU",
+        "Mr. Mohd. Omar, Department of CS & IT, MANUU",
+        "Dr. Muqeem Ahmed, Department of CS & IT, MANUU",
+        "Mr. Mohd. Rafeeq, Department of CS & IT, MANUU",
+        "Mr. Mohammad Islam, Department of CS & IT, MANUU",
+        "Dr. Jameel Ahamed, Department of CS & IT, MANUU",
+        "Ms. Geeta Pattun, Department of CS & IT, MANUU",
+        "Dr. Fareeha Rasheed, Department of CS & IT, MANUU",
+        "Dr. Naiyar Iqbal, Department of CS & IT, MANUU",
+        "Dr. Mohd Aslam, Department of CS & IT, MANUU",
+        "Mr. Mohommad Rashid, Department of CS & IT, MANUU",
+        "Mr. Kamran Siddique, Department of CS & IT, MANUU",
+        "Mr. Md. Nadeem Noori, Department of CS & IT, MANUU",
+        "Mr. Ahmad Raza, Department of CS & IT, MANUU",
+        "Ms. Alisha Raza, Department of CS & IT, MANUU",
+        "Ms. Syeda Imrana Fatima, Department of CS & IT, MANUU"
+      ]
+    }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-indigo-900 to-slate-900 mt-[-400px]">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-indigo-900 to-slate-900 md:mt-[-400px]">
       {/* Hero Section with Parallax Effect */}
-      <div className="relative min-h-[1000px] flex items-center justify-center overflow-hidden">
+      <div className="relative md:min-h-[1000px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070')] bg-cover bg-center opacity-10 transform scale-110"
           style={{ transform: "scale(1.1)" }}
         />
-        <div className="relative z-10 container mx-auto px-4 text-center mt-[400px]">
+        <div className="relative z-10 container mx-auto px-4 text-center md:mt-[400px]">
           <div className="space-y-8">
             <div className="inline-block animate-fade-in">
               <span className="px-4 py-2 bg-blue-500/10 text-blue-400 rounded-full text-sm font-medium border border-blue-500/20">
@@ -157,7 +250,7 @@ const Home = () => {
       {/* About Sections */}
       <section className="py-20 bg-gradient-to-b from-slate-900/50 to-slate-800/50 backdrop-blur-lg">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex  gap-[20px] justify-center items-center">
+          <div className="flex md:flex-row flex-col gap-[20px] justify-center items-center">
             {/* About MANUU */}
             <Card className=" p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:transform hover:scale-[1.02] transition-all">
               <div className="flex items-center gap-3 mb-6">
@@ -383,30 +476,77 @@ const Home = () => {
             </div>
           </div>
 
+         
+        </div>
           {/* Advisory Board */}
-          <div className="mb-16">
+          <div className="mb-16 max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <UserCheck className="w-8 h-8 text-blue-400" />
-                <h2 className="text-3xl font-bold text-white">
-                  Advisory Board
-                </h2>
+                <h2 className="text-3xl font-bold text-white">Advisory Board</h2>
+              </div>
+            </div>
+            <div className="space-y-8">
+              {/* International Advisory Board */}
+              <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
+                <h3 className="text-xl font-bold text-white mb-6">International Advisory Board</h3>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {committees.advisoryBoard.international.map((member, index) => (
+                    <div key={index} className="text-slate-300 flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
+                      <span>{member}</span>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+              
+              {/* National Advisory Board */}
+              <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
+                <h3 className="text-xl font-bold text-white mb-6">National Advisory Board</h3>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {committees.advisoryBoard.national.map((member, index) => (
+                    <div key={index} className="text-slate-300 flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
+                      <span>{member}</span>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          {/* Technical Committee */}
+          <div className="mb-16 max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Cpu className="w-8 h-8 text-purple-400" />
+                <h2 className="text-3xl font-bold text-white">Technical Committee</h2>
               </div>
             </div>
             <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[
-                  "Abdul Quaiyum Ansari, Ph.D., Jamia Millia Islamia",
-                  "Akhtar Kalam, Ph.D., Victoria University",
-                  "Ayoub Al-Hamadi, Ph.D., University of Magdeburg",
-                  "Hanifa Shah, Ph.D., Birmingham City University",
-                  "Minoru Kuribayashi, Ph.D., Okayama University",
-                  "Yogesh Singh, Ph.D., Delhi University",
-                ].map((member, index) => (
-                  <div
-                    key={index}
-                    className="text-slate-300 flex items-center gap-2"
-                  >
+                {committees.technicalCommittee.members.map((member, index) => (
+                  <div key={index} className="p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
+                    <h4 className="text-white font-semibold mb-2">{member.name}</h4>
+                    <p className="text-slate-400 text-sm">{member.institution}</p>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+
+          {/* Organizing Committee */}
+          <div className="mb-16 max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Users className="w-8 h-8 text-blue-400" />
+                <h2 className="text-3xl font-bold text-white">Organizing Committee</h2>
+              </div>
+            </div>
+            <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {committees.organizingCommittee.members.map((member, index) => (
+                  <div key={index} className="text-slate-300 flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
                     <span>{member}</span>
                   </div>
@@ -414,7 +554,7 @@ const Home = () => {
               </div>
             </Card>
           </div>
-        </div>
+
       </section>
 
       {/* Footer */}
@@ -488,5 +628,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
