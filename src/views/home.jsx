@@ -106,7 +106,7 @@ const Home = () => {
         "Prof. Hari Mohan Pandey, Edge Hill University, United Kingdom",
         "Prof. Minoru Kuribayashi, Okayama University, Japan",
         "Prof. Riyasat Ali, University of Houston, USA",
-        "Prof. Syed Khalid Mustafa, University of Tabuk, Saudi Arabia"
+        "Prof. Syed Khalid Mustafa, University of Tabuk, Saudi Arabia",
       ],
       national: [
         "Prof. Abdul Quaiyum Ansari, Jamia Millia Islamia, New Delhi",
@@ -119,48 +119,48 @@ const Home = () => {
         "Prof. Rajive Kumar, Member Secretary, AICTE, Delhi",
         "Dr. Santosh Pandey, Ministry of Electronics and IT",
         "Dr. Vivek Kumar Singh, NITI Ayog",
-        "Prof. Yogesh Singh, Vice Chancellor, Delhi University"
-      ]
+        "Prof. Yogesh Singh, Vice Chancellor, Delhi University",
+      ],
     },
     technicalCommittee: {
       members: [
         {
           name: "Prof. Mohammad Amjad",
-          institution: "Jamia Millia Islamia, New Delhi"
+          institution: "Jamia Millia Islamia, New Delhi",
         },
         {
           name: "Prof. Tanvir Ahmad",
-          institution: "Jamia Millia Islamia, New Delhi"
+          institution: "Jamia Millia Islamia, New Delhi",
         },
         {
           name: "Prof. Bashir Alam",
-          institution: "Jamia Millia Islamia, New Delhi"
+          institution: "Jamia Millia Islamia, New Delhi",
         },
         {
           name: "Prof. Mansaf Alam",
-          institution: "Jamia Millia Islamia, New Delhi"
+          institution: "Jamia Millia Islamia, New Delhi",
         },
         {
           name: "Prof. Mohammad Zeeshan Ansari",
-          institution: "Jamia Millia Islamia, New Delhi"
+          institution: "Jamia Millia Islamia, New Delhi",
         },
         {
           name: "Prof. Mohd. Najmud Din",
-          institution: "University of Kashmir, Srinagar"
+          institution: "University of Kashmir, Srinagar",
         },
         {
           name: "Prof. Majid Zaman",
-          institution: "University of Kashmir, Srinagar"
+          institution: "University of Kashmir, Srinagar",
         },
         {
           name: "Prof. Zahoor Ahmad Najar",
-          institution: "University of Kashmir, Srinagar"
+          institution: "University of Kashmir, Srinagar",
         },
         {
           name: "Prof. Muheet Ahmed Butt",
-          institution: "University of Kashmir, Srinagar"
-        }
-      ]
+          institution: "University of Kashmir, Srinagar",
+        },
+      ],
     },
     organizingCommittee: {
       members: [
@@ -186,9 +186,9 @@ const Home = () => {
         "Mr. Md. Nadeem Noori, Department of CS & IT, MANUU",
         "Mr. Ahmad Raza, Department of CS & IT, MANUU",
         "Ms. Alisha Raza, Department of CS & IT, MANUU",
-        "Ms. Syeda Imrana Fatima, Department of CS & IT, MANUU"
-      ]
-    }
+        "Ms. Syeda Imrana Fatima, Department of CS & IT, MANUU",
+      ],
+    },
   };
 
   return (
@@ -248,7 +248,7 @@ const Home = () => {
       </div>
 
       {/* About Sections */}
-      <section className="py-20 bg-gradient-to-b from-slate-900/50 to-slate-800/50 backdrop-blur-lg">
+      <section className="py-20 pb-1 bg-gradient-to-b from-slate-900/50 to-slate-800/50 backdrop-blur-lg">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex md:flex-row flex-col gap-[20px] justify-center items-center">
             {/* About MANUU */}
@@ -292,7 +292,7 @@ const Home = () => {
       </section>
 
       {/* Key Dates Section */}
-      <section className="py-20 bg-gradient-to-b from-slate-800/50 to-indigo-900/50 ">
+      <section className="py-20 pb-1 bg-gradient-to-b from-slate-800/50 to-indigo-900/50 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -322,7 +322,7 @@ const Home = () => {
       </section>
 
       {/* Tracks and Topics */}
-      <section className="py-20 bg-gradient-to-b from-indigo-900/50 to-slate-900/50">
+      <section className="py-20 pb-1 bg-gradient-to-b from-indigo-900/50 to-slate-900/50">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -391,7 +391,7 @@ const Home = () => {
       </section>
 
       {/* Fee Details */}
-      <section className="py-20 bg-gradient-to-b from-slate-900/50 to-indigo-900/50">
+      <section className="py-20 pb-1 bg-gradient-to-b from-slate-900/50 to-indigo-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -445,7 +445,7 @@ const Home = () => {
       </section>
 
       {/* Committee Sections */}
-      <section className="py-20 bg-gradient-to-b from-indigo-900/50 to-slate-900/50">
+      <section className="py-10 pb-1  bg-gradient-to-b from-indigo-900/50 to-slate-900/50">
         <div className="container mx-auto px-4 max-w-7xl">
           {/* Steering Committee */}
           <div className="mb-16">
@@ -475,78 +475,45 @@ const Home = () => {
               ))}
             </div>
           </div>
-
-         
         </div>
-          {/* Advisory Board */}
-          <div className="mb-16 max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <UserCheck className="w-8 h-8 text-blue-400" />
-                <h2 className="text-3xl font-bold text-white">Advisory Board</h2>
-              </div>
-            </div>
-            <div className="space-y-8">
-              {/* International Advisory Board */}
-              <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
-                <h3 className="text-xl font-bold text-white mb-6">International Advisory Board</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {committees.advisoryBoard.international.map((member, index) => (
-                    <div key={index} className="text-slate-300 flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
-                      <span>{member}</span>
-                    </div>
-                  ))}
-                </div>
-              </Card>
-              
-              {/* National Advisory Board */}
-              <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
-                <h3 className="text-xl font-bold text-white mb-6">National Advisory Board</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {committees.advisoryBoard.national.map((member, index) => (
-                    <div key={index} className="text-slate-300 flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
-                      <span>{member}</span>
-                    </div>
-                  ))}
-                </div>
-              </Card>
+        {/* Advisory Board */}
+        <div className="mb-16 max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <UserCheck className="w-8 h-8 text-blue-400" />
+              <h2 className="text-3xl font-bold text-white">Advisory Board</h2>
             </div>
           </div>
-
-          {/* Technical Committee */}
-          <div className="mb-16 max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Cpu className="w-8 h-8 text-purple-400" />
-                <h2 className="text-3xl font-bold text-white">Technical Committee</h2>
-              </div>
-            </div>
+          <div className="space-y-8">
+            {/* International Advisory Board */}
             <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {committees.technicalCommittee.members.map((member, index) => (
-                  <div key={index} className="p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg">
-                    <h4 className="text-white font-semibold mb-2">{member.name}</h4>
-                    <p className="text-slate-400 text-sm">{member.institution}</p>
+              <h3 className="text-xl font-bold text-white mb-6">
+                International Advisory Board
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {committees.advisoryBoard.international.map((member, index) => (
+                  <div
+                    key={index}
+                    className="text-slate-300 flex items-center gap-2"
+                  >
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
+                    <span>{member}</span>
                   </div>
                 ))}
               </div>
             </Card>
-          </div>
 
-          {/* Organizing Committee */}
-          <div className="mb-16 max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Users className="w-8 h-8 text-blue-400" />
-                <h2 className="text-3xl font-bold text-white">Organizing Committee</h2>
-              </div>
-            </div>
+            {/* National Advisory Board */}
             <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
+              <h3 className="text-xl font-bold text-white mb-6">
+                National Advisory Board
+              </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {committees.organizingCommittee.members.map((member, index) => (
-                  <div key={index} className="text-slate-300 flex items-center gap-2">
+                {committees.advisoryBoard.national.map((member, index) => (
+                  <div
+                    key={index}
+                    className="text-slate-300 flex items-center gap-2"
+                  >
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
                     <span>{member}</span>
                   </div>
@@ -554,9 +521,207 @@ const Home = () => {
               </div>
             </Card>
           </div>
+        </div>
 
+        {/* Technical Committee */}
+        <div className="mb-16 max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Cpu className="w-8 h-8 text-purple-400" />
+              <h2 className="text-3xl font-bold text-white">
+                Technical Committee
+              </h2>
+            </div>
+          </div>
+          <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {committees.technicalCommittee.members.map((member, index) => (
+                <div
+                  key={index}
+                  className="p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg"
+                >
+                  <h4 className="text-white font-semibold mb-2">
+                    {member.name}
+                  </h4>
+                  <p className="text-slate-400 text-sm">{member.institution}</p>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </div>
+
+        {/* Organizing Committee */}
+        <div className="mb-16 max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Users className="w-8 h-8 text-blue-400" />
+              <h2 className="text-3xl font-bold text-white">
+                Organizing Committee
+              </h2>
+            </div>
+          </div>
+          <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {committees.organizingCommittee.members.map((member, index) => (
+                <div
+                  key={index}
+                  className="text-slate-300 flex items-center gap-2"
+                >
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-400 flex-shrink-0" />
+                  <span>{member}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </div>
       </section>
 
+      {/**Paper submission */}
+
+      <section
+        id="paper-submission"
+        className="py-20 pt-0 bg-gradient-to-b from-slate-900/50 to-indigo-900/50"
+      >
+        <div className="container  max-w-7xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-10">
+            <Send className="w-8 h-8 text-blue-400" />
+            <h2 className="text-3xl font-bold text-white">Paper Submission</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl h-min">
+              <h3 className="text-xl font-bold mb-4 text-white">
+                Requirements
+              </h3>
+              <div className="space-y-4">
+                <p className="text-white">
+                  Papers must use the format described in the templates below:
+                </p>
+                <div className="flex gap-4">
+                  <Button variant="outline" className="flex items-center gap-2">
+                    <FileText className="w-4 h-4" />
+                    Word Template
+                  </Button>
+                  <Button variant="outline" className="flex items-center gap-2">
+                    <FileText className="w-4 h-4" />
+                    PDF Template
+                  </Button>
+                </div>
+                <p className="text-white">
+                  Abstracts, of a maximum of 400 words, should be submitted to
+                  the conference page.
+                </p>
+              </div>
+
+              <div className="mt-6">
+                <h4 className="font-bold text-lg mb-4 text-white">
+                  Submission Procedure
+                </h4>
+                <ol className="list-decimal list-inside space-y-2 text-white">
+                  <li className="text-white">
+                    Register an account in the Conference Management Toolkit
+                    (CMT) portal.
+                  </li>
+                  <li className="text-white">
+                    Choose ICCIDST-2026 and submit your paper
+                  </li>
+                </ol>
+              </div>
+            </Card>
+
+            <Card className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl">
+              <h3 className="text-xl font-bold mb-4 text-white">
+                Guidelines for camera ready submission
+              </h3>
+              <div className="space-y-4">
+                <p className="text-white">
+                  Please adhere to the following steps to prepare and submit
+                  your camera-ready version by December 30, 2025.
+                </p>
+
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-2 text-white">
+                      Step 1: Revision
+                    </h4>
+                    <p className="text-white">
+                      Please revise your paper according to the reviews. Take
+                      all reviewer comments seriously when preparing your final
+                      submission. Special care should be taken for clarity,
+                      quality of English, and writing.
+                    </p>
+                    <div className="mt-2 bg-yellow-50 p-3 rounded-lg">
+                      <p className="text-sm text-yellow-800">
+                        Note: Papers containing plagiarism or similarity more
+                        than 10% will not appear in the conference proceedings.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2 text-white">Step 2: Formatting</h4>
+                    <p className="text-white">
+                      The camera-ready version should not exceed 12 pages.
+                      Prepare your paper strictly following the new ICCIDSDT-2026
+                      templates:
+                    </p>
+                    <div className="flex gap-4 mt-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex items-center gap-2"
+                      >
+                        <FileText className="w-4 h-4" />
+                        Word Template
+                      </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex items-center gap-2"
+                      >
+                        <FileText className="w-4 h-4" />
+                        PDF Template
+                      </Button>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2 text-white">
+                      Step 3: Final Submission
+                    </h4>
+                    <p className="text-white">
+                      Send the final version via email with:
+                    </p>
+                    <ul className="list-disc list-inside mt-2 space-y-1 text-white">
+                      <li>Final PDF version (e.g., ICCIDSDT2026-paper-481.PDF)</li>
+                      <li>ZIP file with source files or Word document</li>
+                    </ul>
+                    <div className="mt-4 bg-blue-50 p-4 rounded-lg">
+                      <p className="font-semibold text-blue-900">
+                        Submission Details:
+                      </p>
+                      <div className="mt-2 space-y-1 text-sm">
+                        <p>
+                          <span className="font-medium">Email:</span>{" "}
+                          ICCIDSDT2026@gmail.com
+                        </p>
+                        <p>
+                          <span className="font-medium">Subject Format:</span>{" "}
+                          ICCIDSDT2026 Camera-Ready Submission [Paper ID]
+                        </p>
+                        <p>
+                          <span className="font-medium">Example:</span> ICCIDSDT2026
+                          Camera-Ready Submission 481
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
       {/* Footer */}
       <footer className="py-12 bg-slate-900/80 backdrop-blur-lg border-t border-white/10">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -628,6 +793,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;
